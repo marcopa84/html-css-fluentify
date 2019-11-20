@@ -6,8 +6,8 @@
 }
 
 /* REGOLE RIUTILIZZABILI */
-.padding_default{
-  padding: 0 200px;
+.margin_default{
+  margin: 0 200px;
 }
 .clear:after{
   content: "";
@@ -24,15 +24,15 @@
   text-transform: uppercase;
   color: #fff;
 }
-
+.float_left{
+  float: left;
+}
 /* PROPRIETA DELL'HEADER */
 header{
   background-color: #0C325A;
 }
 .navbar{
   height:80px;
-  /* width: 80%;
-  margin: 0 auto; */
 }
 .navbar ul{
   list-style: none;
@@ -56,9 +56,7 @@ header{
   color:#f8b71c;
 }
 
-.nav_left{
-  float: left;
-}
+.nav_left{}
 .nav_left img{
   vertical-align: middle;
 }
@@ -67,40 +65,40 @@ header{
 }
 .bkg_green_header{
   background-color: #7BBC00;
-
 }
 .no_bkg_header{
   background: none;
   border: 1px solid #4e8cb6;
 }
 .navbar button{
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
+/* proprietà del display */
 .display{
+  position: relative;
   height:500px;
   background-image: url(../img/oldman.png);
   background-repeat: no-repeat;
   background-size: 60%;
-  background-position: 100% 100%;
-
+  background-position: 110% 100%;
 }
 .text_display{
-  border: 1px solid red;
   width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
-
-
-
-
-
-
-
-
-
-
+.text_display > h1{
+  font-size: 60px;
+  line-height: 90px;
+  color: #fff;
+}
+.bkg_green_display{
+  background-color: #7BBC00;
+  padding: 20px;
+  margin-top: 40px;
+}
+/* /PROPRIETA HEADER */
 
 
 /* PROPRIETA DEL MAIN */
@@ -114,14 +112,35 @@ header{
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
-
-
-
+.title_banner > h2{
+  font-size: 30px;
+}
+.title_banner > h3{
+  margin-top: 50px;
+  font-size: 20px;
+  color:#8B8B8B;
+}
+/* fine banner */
 
 .maintop{
   height: 500px;
 }
+.maintop_left{
+  width: 33%;
+}
+.maintop_center{
+  width: 33%;
+}
+.maintop_right{
+  width: 33%;
+}
+/* Separazione main */
+.hr_main{
+  color:#D3D3D3;
+}
+/* separazione main */
 .mainbottom{
   height: 500px;
   background-color: lime;
