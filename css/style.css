@@ -27,6 +27,9 @@
 .float_left{
   float: left;
 }
+.float_right{
+  float: right;
+}
 /* PROPRIETA DELL'HEADER */
 header{
   background-color: #0C325A;
@@ -56,12 +59,8 @@ header{
   color:#f8b71c;
 }
 
-.nav_left{}
 .nav_left img{
   vertical-align: middle;
-}
-.nav_right{
-  float: right;
 }
 .bkg_green_header{
   background-color: #7BBC00;
@@ -127,21 +126,94 @@ header{
 .maintop{
   height: 500px;
 }
-.maintop_left{
+.maintop_col{
+  position: relative;
   width: 33%;
+  text-align: center;
 }
-.maintop_center{
-  width: 33%;
+.maintop_col > img{
+  height:200px;
+  margin-top: 30px;
 }
-.maintop_right{
-  width: 33%;
+.maintop_col > h3{
+  color: #82BE0F;
+  font-size: 35px;
+  margin: 15px 0;
+}
+.maintop_col > hr{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+}
+.maintop_col > p{
+  font-size: 20px;
+  padding: 20px;
 }
 /* Separazione main */
 .hr_main{
   color:#D3D3D3;
+  width: 100%;
 }
 /* separazione main */
 .mainbottom{
   height: 500px;
-  background-color: lime;
+  padding: 15px;
+}
+.mainbottom_col{
+  width: 50%;
+}
+.mainbottom_col > img{
+  height:400px;
+
+}
+.mainbottom_col > h3{
+  font-size: 35px;
+  margin-top: 30px;
+}
+.mainbottom_col > p{
+  font-size: 30px;
+  margin: 30px 0;
+}
+.mainbottom_col > a{
+  font-size: 30px;
+}
+.mainbottom_col >a:hover{
+  color:#f8b71c;
+}
+footer{
+  background-color: #D3D3D3;
+
+}
+.footer{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+}
+.footer_left{
+  width: 50%;
+  position: absolute;
+  top:50%;
+  left: 200px;
+  transform: translateY(-50%);
+}
+.footer_right{
+  width: 50%;
+  position: absolute;
+  top:50%;
+  right:200px;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.footer_right span{
+  width: 50%;
+  display: inline;
+}
+.footer_right p{
+  text-decoration: underline;
+  display: inline;
+}
+.footer_right button{
+  margin-top: 0;
 }
