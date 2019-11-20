@@ -5,6 +5,63 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body{
-  
+.clear:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* PROPRIETA DELL'HEADER */
+
+header{
+  /* background-color: #0C325A; */
+}
+
+.navbar{
+  height:80px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: red;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.logo{
+  display: inline-block;
+}
+
+.navbar ul{
+  list-style: none;
+}
+
+.navbar li{
+  float: left;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav_left{
+}
+
+.display{
+  height:850px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+/* PROPRIETA DEL MAIN */
+.banner{
+  height:200px;
+  background-color: #D3D3D3;
+}
+.maintop{
+  height: 500px;
+}
+.mainbottom{
+  height: 500px;
+  background-color: lime;
 }
