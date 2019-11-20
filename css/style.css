@@ -5,59 +5,120 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* REGOLE RIUTILIZZABILI */
+.padding_default{
+  padding: 0 200px;
+}
 .clear:after{
   content: "";
   display: table;
   clear: both;
 }
+.button{
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  padding:10px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
 
 /* PROPRIETA DELL'HEADER */
-
 header{
-  /* background-color: #0C325A; */
+  background-color: #0C325A;
 }
-
 .navbar{
   height:80px;
-  width: 85%;
-  margin: 0 auto;
-  background-color: red;
-  line-height: 80px;
-  vertical-align: middle;
+  /* width: 80%;
+  margin: 0 auto; */
 }
-
-.logo{
-  display: inline-block;
-}
-
 .navbar ul{
   list-style: none;
 }
-
 .navbar li{
-  float: left;
+  display: inline-block;
+  line-height: 80px;
+  padding: 0 15px;
 }
-
 .navbar a{
   text-decoration: none;
   font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar li:hover a{
+  color:#f8b71c;
 }
 
 .nav_left{
+  float: left;
+}
+.nav_left img{
+  vertical-align: middle;
+}
+.nav_right{
+  float: right;
+}
+.bkg_green_header{
+  background-color: #7BBC00;
+
+}
+.no_bkg_header{
+  background: none;
+  border: 1px solid #4e8cb6;
+}
+.navbar button{
+    cursor: pointer;
 }
 
+
 .display{
-  height:850px;
-  width: 85%;
-  margin: 0 auto;
-  background-color: blue;
+  height:500px;
+  background-image: url(../img/oldman.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 100% 100%;
+
 }
+.text_display{
+  border: 1px solid red;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PROPRIETA DEL MAIN */
 .banner{
+  position: relative;
   height:200px;
   background-color: #D3D3D3;
 }
+.title_banner{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
 .maintop{
   height: 500px;
 }
