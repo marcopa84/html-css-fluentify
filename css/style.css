@@ -181,9 +181,10 @@ header{
 .mainbottom_col >a:hover{
   color:#f8b71c;
 }
+
+/* REGOLE DEL FOOTER */
 footer{
   background-color: #D3D3D3;
-
 }
 .footer{
   position: relative;
@@ -216,4 +217,11 @@ footer{
 }
 .footer_right button{
   margin-top: 0;
+}
+/* TASTO HELP */
+.help{
+  position: fixed;
+  bottom:-6px;
+  right: 250px;
+  border-bottom: none;
 }
